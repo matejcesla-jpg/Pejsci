@@ -1,47 +1,111 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <title>Svítící dorty</title>
+  <link rel="icon" type="image/svg+xml" href="durt.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+
+
+
+  <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="#uvod">
+        PIXEL NIGHT
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
+        aria-expanded="false" aria-label="Přepnout navigaci">
+
         <span class="navbar-toggler-icon"></span>
+
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Domů</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Naši pejskové</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">U nás</a>
-          </li>
-        </ul>
+
+      <div class="collapse navbar-collapse" id="menu">
+
+        <div class="navbar-nav ms-auto">
+
+          <a class="nav-link" href="#uvod">Úvod</a>
+          <a class="nav-link" href="#program">Program</a>
+          <a class="nav-link" href="#registrace">Registrace</a>
+
+          <button type="button" class="btn btn-primary">Chci dorazit</button>
+
+        </div>
+
       </div>
+
     </div>
+
   </nav>
 
 
 
+  <section id="uvod" class="bg-dark bg-gradient">
+    <div class="container">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+      <div class="container">
+        <div class="row">
+          <div class="col">
 
 
+          </div>
+          <div class="col">
 
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="display-3 fw-bold text-white">
+              PIXEL
+            </h1>
+            <h1 class="display-3 fw-bold text-primary">
+              NIGHT
+            </h1>
+            <p class="lead text-secondary">
+              Kreativní večer plný designu,
+              animace a digitálních experimentů.
+            </p>
+
+            <a href="#registrace" class="btn btn-primary">
+              Rezervovat místo
+            </a>
+            <a hrej="#program" class="btn btn-outline-light">
+              Program
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg-primary h-100">
+
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Primary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+  </section>
 </body>
 
 </html>
